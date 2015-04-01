@@ -1,0 +1,35 @@
+import sys
+import os
+
+
+pytho = sys.executable
+
+
+
+#lets user input name and save it as Name
+Name= raw_input("What is your name?")
+#prints hello with users input for Name with extra
+print "Hello " + str(Name) + ", Tell me about yourself"
+#asks the user different question that will be saved as variables
+color = raw_input("What is your favorite color?")
+job = raw_input("What is your dream job?")
+grade = raw_input("What grade are you in?")
+#prints a line with recently saved varibles
+print "Oh, so your name is %s, you want to be a %s, you like %s, and you're in Grade %s ." %(Name, job, color, grade)
+#Confirm selections
+confirm = raw_input("Am I correct?")
+word = confirm
+
+def confirm(word):
+    while True:
+        if word.lower() == "yes":
+            return True, "Lets continue"
+            break
+        elif word.lower() == "no":
+            return False, "lets try again"
+        else:
+            return False, "Sorry, I didnt understand you."
+
+
+
+
