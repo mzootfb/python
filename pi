@@ -1,0 +1,14 @@
+//finds pi to the nth digit
+import math
+n = input('Enter the amount of decimals you would like from pi: ')
+//function start
+def calc_pi(n):
+//limit
+    if n > 100:
+        print "under 100 please"
+    else:
+    //machin-like formula
+        pi = 4 * (4 * math.atan(1.0/5.0) - math.atan(1.0/239.0))
+        //n+2 is "3."
+        print "<%.*s>" % (n+2,pi)
+calc_pi(n)
